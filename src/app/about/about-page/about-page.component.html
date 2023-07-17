@@ -1,0 +1,11 @@
+<section id="about" class="introduction" *ngIf="intro$ | async as intro">
+  <div class="row clearfix">
+    <div class="col-4-8-4" *ngIf="features$">
+      <div class="feature-container">
+        <div *ngFor="let feature of features$ | async; let i = index" class="feature-item">
+          <app-feature-block [feature]="feature"></app-feature-block>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

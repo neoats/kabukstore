@@ -1,0 +1,9 @@
+.feature-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.feature-item {
+
+  flex-basis: 60%; /* İstenilen genişliği ayarlayın */
+}
