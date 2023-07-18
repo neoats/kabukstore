@@ -25,7 +25,6 @@ import { ConfigService } from './shared/services/config.service';
 import { InMemoryDataService } from './shared/services/in-memory-data.service';
 
 import { SocialComponent } from './social/social.component';
-import { RouterModule } from '@angular/router';
 
 @NgModule({
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
@@ -55,7 +54,7 @@ import { RouterModule } from '@angular/router';
       dataEncapsulation: false,
       passThruUnknownUrl: true,
     }),
-   
+
 
   ],
   providers: [ConfigService],
