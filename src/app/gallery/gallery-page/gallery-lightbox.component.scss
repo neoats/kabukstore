@@ -3,14 +3,14 @@
 position: relative;
 display: inline-block;
 padding: 25px;
-border: 1px solid black;
+
 
 }
 .gallery{
   line-height: 0;
   column-count: 3;
   column-gap: 30px;
-  border: 1px solid black;
+
 
 }
 .gallery-img img {
@@ -26,11 +26,11 @@ border: 1px solid black;
 
   display: block;
   text-align: center;
-  border: 5px solid black;
+
 }
 .lightbox{
 
-  border: 5px solid black;
+
   display: flex;
   align-items: center;
   justify-content: center;

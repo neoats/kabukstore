@@ -13,11 +13,11 @@
     <div id="banner-content" class="row clearfix ">
       <div class="col-38">
         <div class="section-heading">
-          <h1>{{ header.tagline }}</h1>
+          <h1 id="tagline">{{ header.tagline }}</h1>
           <h2>{{ header.title }}</h2>
         </div>
 
-        <a routerLink="{{ header.buttonlink }}" class="button">{{
+        <a routerLink="{{ header.buttonlink }}" class="button" id="myButton">{{
           header.buttontext
         }}</a>
       </div>

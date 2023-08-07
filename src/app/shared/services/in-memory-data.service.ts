@@ -58,8 +58,8 @@ export class InMemoryDataService implements InMemoryDbService {
         name: "header",
         tagline: "SİZ DÜŞÜNÜN BİZ YAPALIM",
         title:
-          "Namari is free landing page template you can use for your projects. It is free to use for your personal and commercial projects, enjoy!",
-        buttontext: "START CREATING TODAY",
+          "",
+        buttontext: "BUGÜN TASARIMA BAŞLA",
         buttonlink: "/home",
         image: "ww1.jpg",
       },
@@ -81,6 +81,20 @@ export class InMemoryDataService implements InMemoryDbService {
       },
 
     ];
+    const services = [
+      { id: 1, title: "Tasarım", description: "Ahşap ürünleriniz için en iyi tasarımları sunuyoruz. Özgün ve etkileyici çözümlerle ahşap ürünlerinizi ön plana çıkarıyoruz. Trendleri takip ederek yeni ve yaratıcı projeler sunuyoruz. Size özel hizmet ve başarı için buradayız. ." },
+      { id: 2, title: "Ahşap CNC", description: "Uzman ekibimizle benzersiz ahşap CNC ürünleri sunuyoruz. Hayallerinizi gerçeğe dönüştürmek için buradayız. Tasarımın sınırlarını zorlayın, özgün ve kaliteli ürünlerle tanışın!" },
+      { id: 3, title: "Alüminyum CNC", description: "Deneyimli ekibimizle alüminyum CNC ürünlerini size sunuyoruz. Sağlamlık ve estetiği bir arada yaşayın. Hayal gücünüzü gerçeğe dönüştürmek için buradayız. Özgünlüğü alüminyumun dayanıklılığıyla buluşturuyoruz." },
+      { id: 4, title: "Plexiglass CNC", description: "Uzman ekibimizle plexiglass CNC ürünleriyle şıklığı yakalayın. Şeffaf tasarımlarla mekanlarınıza farklılık katın. İhtişamı ve zarafeti plexiglass ile bir araya getiriyoruz. Sıra dışı tasarımlar için bizimle iletişime geçin." },
+      { id: 4, title: "Plexiglass CNC", description: "Uzman ekibimizle plexiglass CNC ürünleriyle şıklığı yakalayın. Şeffaf tasarımlarla mekanlarınıza farklılık katın. İhtişamı ve zarafeti plexiglass ile bir araya getiriyoruz. Sıra dışı tasarımlar için bizimle iletişime geçin." },
+
+      { id: 4, title: "Plexiglass CNC", description: "Uzman ekibimizle plexiglass CNC ürünleriyle şıklığı yakalayın. Şeffaf tasarımlarla mekanlarınıza farklılık katın. İhtişamı ve zarafeti plexiglass ile bir araya getiriyoruz. Sıra dışı tasarımlar için bizimle iletişime geçin." },
+      { id: 4, title: "Plexiglass CNC", description: "Uzman ekibimizle plexiglass CNC ürünleriyle şıklığı yakalayın. Şeffaf tasarımlarla mekanlarınıza farklılık katın. İhtişamı ve zarafeti plexiglass ile bir araya getiriyoruz. Sıra dışı tasarımlar için bizimle iletişime geçin." },
+      { id: 4, title: "Plexiglass CNC", description: "Uzman ekibimizle plexiglass CNC ürünleriyle şıklığı yakalayın. Şeffaf tasarımlarla mekanlarınıza farklılık katın. İhtişamı ve zarafeti plexiglass ile bir araya getiriyoruz. Sıra dışı tasarımlar için bizimle iletişime geçin." },
+      { id: 4, title: "Plexiglass CNC", description: "Uzman ekibimizle plexiglass CNC ürünleriyle şıklığı yakalayın. Şeffaf tasarımlarla mekanlarınıza farklılık katın. İhtişamı ve zarafeti plexiglass ile bir araya getiriyoruz. Sıra dışı tasarımlar için bizimle iletişime geçin." },
+
+
+    ]
     const images = [
       { id: 1, name: "gallery-image-1.jpg" },
       { id: 2, name: "gallery-image-2.jpg" },
@@ -281,6 +295,7 @@ export class InMemoryDataService implements InMemoryDbService {
       feedback,
       plans,
       websites,
+      services,
     };
   }
 }

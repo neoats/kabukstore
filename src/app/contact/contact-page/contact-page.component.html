@@ -1,37 +1,39 @@
 <div id="services" class="scrollto clearfix">
   <div class="row no-padding-bottom clearfix">
-    <!-- Content Left Side -->
-    <div class="col-3">
-      <!-- User Testimonial -->
-      <blockquote class="testimonial text-right bigtest">
-        <q>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</q>
-        <footer>— John Doe, Happy Customer</footer>
-      </blockquote>
-      <!-- End of Testimonial -->
+    <div class="col-7">
+
     </div>
-    <!-- End Content Left Side -->
 
     <!-- Content of the Right Side -->
-    <div class="col-3">
-      <div class="section-heading">
-        <google-map height="400" width="750" [latitude]="38.4137231" [longitude]="27.1568675" [zoom]="19"></google-map>
+    <div class="col-2">
+      <div id="map" style="height: 500px;">
       </div>
-      <img src="https://maps.googleapis.com/maps/api/staticmap?center=38.4137231,27.1568675&zoom=19&size=500x500&key=AIzaSyDOpLYy0p00suXtXnVR727Em9OswubGjr4" alt="Static Map">
-      <p>
-        Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet!
-      </p>
-
-      <!-- Just replace the Video ID "UYJ5IjBRlW8" with the ID of your video on YouTube (Found within the URL) -->
-      <a href="#" data-videoid="UYJ5IjBRlW8" data-videosite="youtube" class="button video link-lightbox">
-        FULL MAP <i class="fa fa-play" aria-hidden="true"></i>
-      </a>
     </div>
 
-    <div class="col-3">
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-      </p>
+
+    <div id="adress" class="col-3 mt-10">
+      <h3>Adresimiz </h3>
+      <table class="table">
+        <tr>
+          <td>Yenidoğan</td>
+        </tr>
+        <tr>
+          <td>1139. Sk. No:106</td>
+        </tr>
+        <tr>
+          <td>Konak/İzmir</td>
+        </tr>
+
+      </table>
     </div>
+
     <!-- End Content Right Side -->
+
   </div>
+  <a id="myButton"
+    href="https://www.google.com/maps?ll=38.413723,27.15708&z=19&t=m&hl=tr-TR&gl=US&mapclient=apiv3&cid=15887048466227069906"
+    data-videoid="UYJ5IjBRlW8" data-videosite="youtube" class="button video link-lightbox">
+    Tam Harita <i class="fa fa-play" aria-hidden="true"></i>
+  </a>
 </div>
+<app-comment></app-comment>

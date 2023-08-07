@@ -1,0 +1,26 @@
+
+<div class="form-container">
+  <div class="form-content">
+    <form (ngSubmit)="onSubmit()" #contactForm="ngForm">
+      <h3>Bize Ulaşın</h3>
+      <div class="form-group">
+        <label for="name">Ad Soyad:</label>
+        <input type="text" id="name" name="name" ngModel required>
+      </div>
+      <div class="form-group">
+        <label for="email">E-posta:</label>
+        <input type="email" id="email" name="email" ngModel required>
+      </div>
+      <div class="form-group">
+        <label for="subject">Konu:</label>
+        <input type="text" id="subject" name="subject" ngModel required>
+      </div>
+      <div class="form-group">
+        <label for="comment">Yorum</label>
+        <textarea id="comment" name="comment" ngModel required></textarea>
+      </div>
+
+      <button type="submit" [disabled]="!contactForm.valid">Gönder</button>
+    </form>
+  </div>
+</div>

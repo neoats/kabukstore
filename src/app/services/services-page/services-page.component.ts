@@ -4,25 +4,28 @@ import { ConfigService } from "../../shared/services/config.service";
 
 @Component({
   selector: "app-services-page",
-  templateUrl: "./services-page.component.html"
+  templateUrl: "./services-page.component.html",
+  styleUrls: ["./services-page.component.scss"]
 })
 export class ServicesPageComponent implements OnInit {
-  // services: {
-  //   id: number;
-  //   name: string;
-  //   tagline: string;
-  //   title: string;
-  //   description: string;
-  // }[];
+
+  
   services$: Observable<any> = new Observable();
 
   constructor(private config: ConfigService) {}
 
-  ngOnInit() {
-    this.getPageData("pages", 3);
+
+  ngOnInit(): void {
+
+    this.getBlockData("services");
   }
 
-  getPageData(database: string, id?: number) {
-    this.services$ = this.config.getSettings(database, id);
+  getPageData(database: string, id?: number): void {
+    this.services$= this.config.getSettings(database, id);
+  }
+
+  getBlockData(database: string) {
+
+    this.services$ = this.config.getSettings(database);
   }
 }

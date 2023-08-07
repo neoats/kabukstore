@@ -1,3 +1,32 @@
 #banner {
   background-color: transparent !important;
 }
+
+/* Normal boyut */
+
+/* 640 pikselden küçük ekranlarda boyutu küçült */
+@media screen and (max-width: 640px) {
+  #tagline {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 760) {
+  #tagline {
+    font-size: 15px;
+  }
+}
+
+#myButton {
+  display: inline-block;
+
+  border-radius:2px;
+  transition: box-shadow 0.3s;
+  box-shadow: 0 0 0 transparent;  /* Add a smooth transition effect */
+}
+
+/* Add the style for the div when hovered */
+#myButton:hover {
+  border:2px solid #d2b356;
+  box-shadow: 0 0 10px #d2b356;
+  color: #d2b356;
+}

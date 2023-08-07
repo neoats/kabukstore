@@ -1,0 +1,55 @@
+#adress{
+  padding-top:15%;
+}
+p{
+  font-weight: bold;
+}
+/* Add the initial style for the div */
+#myButton {
+
+
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
+  transition: box-shadow 0.3s;
+  width: 50px;
+  margin: 0 auto; /* Center the button horizontally */
+  margin-left: 50px; /* Add left margin */
+  margin-right: 50px;
+}
+
+/* Add the style for the div when hovered */
+#myButton:hover {
+  border:2px solid #00c3ff;
+  box-shadow: 0 0 10px #00c3ff;
+  color: #00c3ff;
+}
+
+.table{
+  margin-left: 15px;
+  font:bold ;
+}
+
+@media (max-width: 768px) {
+  #services {
+     font-size: 18px;
+    padding: 10px;
+  }
+
+  .col-2 {
+    margin-top: 20px;
+  }
+
+  #map {
+    height: 400px;
+  }
+
+  #myButton {
+    font-size: 16px;
+    padding: 8px;
+  }
+
+  #adress {
+    font-size: 16px;
+  }
+}

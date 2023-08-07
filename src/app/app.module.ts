@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
-import { ReactiveFormsModule } from '@angular/forms';
+import {  ReactiveFormsModule } from '@angular/forms';
 
 // Components
 import { AppComponent } from './app.component';
@@ -25,6 +25,10 @@ import { ConfigService } from './shared/services/config.service';
 import { InMemoryDataService } from './shared/services/in-memory-data.service';
 
 import { SocialComponent } from './social/social.component';
+import { GoogleMapsModule } from '@angular/google-maps';
+import { GraphQLModule } from './graphql.module';
+
+
 
 @NgModule({
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
@@ -35,6 +39,7 @@ import { SocialComponent } from './social/social.component';
     NavigationComponent,
     NavmenuComponent,
     SocialComponent,
+
   ],
   imports: [
     AboutModule,
@@ -46,6 +51,8 @@ import { SocialComponent } from './social/social.component';
     NotfoundModule,
     ReactiveFormsModule,
     ServicesModule,
+    GraphQLModule,
+
     BrowserAnimationsModule,
     // The HttpClientInMemoryWebApiModule module intercepts HTTP requests
     // and returns simulated server responses.
@@ -54,6 +61,7 @@ import { SocialComponent } from './social/social.component';
       dataEncapsulation: false,
       passThruUnknownUrl: true,
     }),
+    GoogleMapsModule,
 
 
   ],
